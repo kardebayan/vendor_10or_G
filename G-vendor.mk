@@ -66,7 +66,7 @@ PRODUCT_COPY_FILES += \
     vendor/10or/G/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/10or/G/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/10or/G/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
-    vendor/10or/G/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/10or/G/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/10or/G/proprietary/vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.0-service-qti.rc \
     vendor/10or/G/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/10or/G/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -431,6 +431,7 @@ PRODUCT_PACKAGES += \
     libubifocus \
     libvideoutils \
     libvqzip \
+    libwvaidl \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
@@ -531,10 +532,8 @@ PRODUCT_PACKAGES += \
     libvendor.goodix.hardware.fingerprint@1.0-service \
     libwms \
     libwqe \
-    libwvhidl \
     libxml \
     libxtadapter \
-    libwvdrmengine \
     qcrild_librilutils \
     qtibus \
     qtimutex \
@@ -648,7 +647,7 @@ PRODUCT_PACKAGES += \
     dpmapi \
     qcrilhook \
     android.hardware.gnss@2.0-service-qti.xml \
-    manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_android.hardware.drm-service.widevine.xml \
     vendor.qti.gnss@3.0-service.xml \
     ATFWD-daemon \
     adpl \
@@ -658,7 +657,7 @@ PRODUCT_PACKAGES += \
     energy-awareness \
     hvdcp_opti \
     android.hardware.bluetooth@1.0-service-qti \
-    android.hardware.drm@1.3-service.widevine \
+    android.hardware.drm-service.widevine \
     android.hardware.gnss@2.0-service-qti \
     qcrild \
     vendor.display.color@1.0-service \
